@@ -1,0 +1,28 @@
+La anotación @RestController en Spring Boot se utiliza para marcar una clase como un controlador de 
+RESTful web services. Cuando se utiliza esta anotación en una clase, Spring Boot automáticamente configura 
+el controlador para que devuelva los datos en el formato solicitado por el cliente, ya sea JSON, XML o 
+cualquier otro formato.
+
+El controlador etiquetado con @RestController maneja las solicitudes de los clientes HTTP y devuelve los datos 
+en un formato específico que se puede consumir en la aplicación del cliente. 
+Al agregar esta anotación, Spring Boot automáticamente configura el controlador para que convierta los objetos 
+de respuesta en el formato de datos deseado antes de enviarlos al cliente.
+
+En resumen, la anotación @RestController en Spring Boot es una manera fácil y rápida de crear controladores 
+RESTful en su aplicación. Al agregar esta anotación, Spring Boot se encarga de la configuración necesaria 
+para manejar las solicitudes y devolver los datos en el formato deseado.
+
+La anotación @GetMapping es una anotación de Spring Framework que se utiliza en el desarrollo de aplicaciones 
+web con Spring Boot para crear controladores (o endpoints) que respondan a las solicitudes HTTP GET.
+
+Al agregar la anotación @GetMapping a un método de controlador de Spring Boot, se indica a Spring que este 
+método debe manejar solicitudes HTTP GET para una ruta o URL específica. La ruta se especifica como un 
+parámetro de la anotación.
+
+Por ejemplo, si se desea crear un endpoint que maneje las solicitudes HTTP GET en la ruta "/hello", se puede 
+crear un método de controlador en una clase con la anotación @GetMapping("/hello"). 
+Cuando una solicitud GET se realiza en la ruta "/hello", Spring Boot invocará este método y devolverá la 
+respuesta generada por el mismo.
+
+En resumen, la anotación @GetMapping es utilizada para mapear solicitudes HTTP GET a métodos de controlador 
+específicos en una aplicación web de Spring Boot.
