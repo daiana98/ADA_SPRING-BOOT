@@ -25,17 +25,17 @@ public class ImpPersonaServicio implements PersonaServicio{
 
     @Override
     public Persona obtenerPorId(Integer id) {
-        return null;
+        return personaRepositorio.findById(id).get();
     }
 
     @Override
     public Persona actualizarPersona(Persona persona) {
-        return null;
+        return personaRepositorio.save(persona);
     }
 
     @Override
     public void eliminarPersona(Integer id) {
-
+        personaRepositorio.deleteById(id);
     }
     //va a implementar todos los metodos de la interaz
 
